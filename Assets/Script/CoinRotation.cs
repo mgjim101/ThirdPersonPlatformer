@@ -3,7 +3,7 @@ using UnityEngine;
 public class CoinRotation : MonoBehaviour
 {
 
-    public Vector3 rotationSpeed = new Vector3(100, 100, 0);
+   // public Vector3 rotationSpeed = new Vector3(0, 100, 0);
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -14,7 +14,6 @@ public class CoinRotation : MonoBehaviour
     void Update()
     {
     
-        this.transform.Rotate(rotationSpeed * Time.deltaTime);
-    
+        this.transform.Rotate(0,0,100 * Time.deltaTime);
     }
 }
